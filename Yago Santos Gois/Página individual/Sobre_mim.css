@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SN Pro';
+}
+
+header {
+    background-color: #C4C4C4;
+    height: 109px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 5px 0 10px gray;
+}
+
+.titulo {
+    margin: 0;
+    padding: 0;
+    margin-left: 7%;
+}
+
+header > nav {
+    display:flex;
+    margin-right: 10%;
+    justify-content: space-around;
+    width: 450px;
+
+}
+
+header > nav > a {
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+    font-size: 125%;
+    font-weight: 550;
+}
+
+.FotoPerfil {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
+}
+
+.descrição {
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+    align-items: center;
+    gap: 10%;
+}
+
+.SobreMim {
+    display: flex;
+    flex-direction: column;
+}
+
+.Lazer {
+    display: flex;
+    padding-top: 20px;
+    height: 40%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.TopicosHobbies {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.Topicos {
+    display: flex;
+    gap: 10px;
+}
+
+.Topicos > div, .Topicos > div {
+    width: 103px;
+    height: 150px;
+    background-color: #DFDFDF;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgb(200, 195, 195);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.podio {
+    background-color: #C4C4C4;
+    margin-top: 0;
+    margin-right: 40px;
+    width: 19px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#Filme_1 {
+    background-image: url(./imagens/filme_1.jpg);
+    background-size: cover;
+}
+
+#Filme_2 {
+    background-image: url(./imagens/Filme_2.jpg);
+    background-size: cover;
+}
+
+#Filme_3 {
+    background-image: url(./imagens/Filme_3.jpg);
+    background-size: cover;
+}
+
+#Filme_4 {
+    background-image: url(./imagens/Filme_4.jpg);
+    background-size: cover;
+}
+
+#Filme_5 {
+    background-image: url(./imagens/Filme_5.jpg);
+    background-size: cover;
+}
