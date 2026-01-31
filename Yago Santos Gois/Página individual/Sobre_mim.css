@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'SN Pro';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -24,15 +33,18 @@ header {
     margin-left: 7%;
 }
 
-header > nav {
-    display:flex;
+.Navegação {
     margin-right: 10%;
+}
+
+.links {
+    display:flex;
     justify-content: space-around;
     width: 450px;
 
 }
 
-header > nav > a {
+.links > a {
     margin: 0;
     padding: 0;
     color: black;
@@ -41,19 +53,41 @@ header > nav > a {
     font-weight: 550;
 }
 
-.FotoPerfil {
-    width: 247px;
-    height: 247px;
-    border-radius: 50%;
+.links > a:hover {
+    font-size: 27px;
+}
+
+.Fechar {
+    background-color: #C4C4C4;
+    width: 45px;
+    border: none;
+    position: absolute;
+    right: 5%;
+    display: none;
+
+}
+
+.MenuHamburger {
+    background-color: #C4C4C4;
+    border: none;
+    display: none;
 }
 
 .descrição {
     background-color: #F3F3F3;
     display: flex;
     justify-content: center;
-    height: 40vh;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
     align-items: center;
     gap: 10%;
+}
+
+.FotoPerfil {
+    width: 247px;
+    height: 247px;
+    border-radius: 50%;
 }
 
 .SobreMim {
@@ -65,8 +99,9 @@ header > nav > a {
     display: flex;
     padding-top: 20px;
     height: 40%;
+    width: 100%;
     justify-content: center;
-    gap: 50px;
+    gap: 5%;
 }
 
 .TopicosHobbies {
@@ -80,7 +115,7 @@ header > nav > a {
     gap: 10px;
 }
 
-.Topicos > div, .Topicos > div {
+.Topicos > a, .Topicos > div {
     width: 103px;
     height: 150px;
     background-color: #DFDFDF;
@@ -90,6 +125,12 @@ header > nav > a {
     flex-direction: column-reverse;
     justify-content: space-between;
     align-items: center;
+}
+
+.Topicos > a:hover, .Topicos > div:hover {
+    width: 115px;
+    height: 165px;
+    transition: all 0.5s;
 }
 
 .podio {
@@ -128,4 +169,182 @@ header > nav > a {
 #Filme_5 {
     background-image: url(./imagens/Filme_5.jpg);
     background-size: cover;
+}
+
+.feedback {
+    margin-top: 100px;
+    width: 62%;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    flex-direction: column;
+}
+
+.Formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Formulario > input {
+    background-color: #ECECEC;
+    width: 90%;
+    height: 56px;
+    border-radius: 4px;
+    border: none;
+    padding-left: 20px;
+}
+
+.Formulario > input::placeholder {
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.Formulario > button {
+    background-color: #D9D9D9;
+    width: 127px;
+    height: 39px;
+    margin-left: 70%;
+    font-family: 'SN Pro';
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+}
+
+footer > nav {
+    display: flex;
+    width: 188px;
+    justify-content: space-between;
+    margin-left: 7%;
+}
+
+footer > button {
+    width: 162px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    background-color: #DFDFDF;
+    margin-right: 7%;
+    cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+    .Lazer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TopicosFilmes, .TopicosHobbies {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .TopicosFilmes {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        display: flex;
+        justify-content: start;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .MenuHamburger {
+        display: block;
+    }
+
+    .Navegação:focus-within  .links {
+        background-color: #C4C4C4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        height: 150px;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        right: -29px;
+    }
+
+    .Navegação:focus-within + .Fechar {
+        display: block;
+    }
+
+    .Navegação {
+        position: absolute;
+        right: 5%;
+        margin-right: 0;
+    }
+
+    .descrição {
+        flex-direction: column;
+    }
+
+    .SobreMim {
+        margin: 3%
+    }
+
+    .Lazer {
+        margin-top: 50px
+    }
+
+    .Topicos {
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .TopicosFilmes, .TopicosHobbies {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    
+    .TopicosFilmes > h2 , .TopicosHobbies > h2 {
+        margin-left: 30px;
+    }
+
+    .feedback {
+        width: 90%;
+        
+    }
+
+    .Formulario > button {
+        margin: 0;
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > nav, footer button {
+        margin: 0;
+    }
 }

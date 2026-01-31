@@ -12,11 +12,15 @@
         <h1 class="titulo">
             Yago Santos Gois
         </h1>
-        <nav>
-            <a href="">Página inicial</a>
-            <a href="">Contatos</a>
-            <a href="">IN Junior</a>
-        </nav>
+        <div class="Navegação">
+            <button class="MenuHamburger"><img src="./imagens/MenuBar.png" alt="Barra de menu"></button>
+            <nav class="links">
+                <a href="/Tarefa HTML/Página principal.Html" target="blank">Página inicial</a>
+                <a href="/Tarefa HTML/Yago Santos Gois/YSG_contatos.html" target="blank">Contatos</a>
+                <a href="https://injunior.com.br/" target="blank">IN Junior</a>
+            </nav>
+        </div>
+        <button class="Fechar"><img src="./imagens/Fechar.png" alt="botão fechar menu"></button>
     </header>
     <main>
         <section class="descrição">
@@ -45,26 +49,39 @@
                     <div><p>Ler</p></div>
                 </div>
             </div>
-            <div class="TopicoFilmes">
+            <div class="TopicosFilmes">
                 <h2>
                     Top 5 filmes
                 </h2>
-                <div class="Topicos">
-                    <div id="Filme_1"><p></p><p class="podio" >1°</p></div>
-                    <div id="Filme_2"><p></p><p class="podio">2°</p></div>
-                    <div id="Filme_3"><p></p><p class="podio">3°</p></div>
-                    <div id="Filme_4"><p></p></div>
-                    <div id="Filme_5"><p></p></div>
-                </div>
+                <nav class="Topicos">
+                    <a href="https://www.imdb.com/pt/title/tt1677720/"  target="_blank" id="Filme_1"><p></p><p class="podio" >1°</p></a>
+                    <a href="https://www.imdb.com/pt/title/tt1219289/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_sem%2520limites" target="_blank" id="Filme_2"><p></p><p class="podio">2°</p></a>
+                    <a href="https://www.imdb.com/pt/title/tt1853728/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_Django" target="_blank" id="Filme_3"><p></p><p class="podio">3°</p></a>
+                    <a href="https://www.imdb.com/pt/title/tt13833688/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_A%2520Baleia" target="_blank" id="Filme_4"></a>
+                    <a href="https://www.imdb.com/pt/title/tt0089927/?ref_=vp_ov_t" target="_blank" id="Filme_5"></a>
+                </nav>
             </div>
         </section>
         <section class="feedback">
-
+            <h2>Feedback</h2>
+            <form class="Formulario">
+                <input type="text" placeholder="Dê um feedback para desenvolvedor!">
+                <input type="text" placeholder="Digite seu nome aqui">
+                <button>Enviar</button>
+            </form>
         </section>
 
     </main>
     <footer>
-
+        <nav>
+            <a href="https://www.instagram.com/yago_sgs/" target="_blank"><img src="./imagens/instagram.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/yago-santos-gois-1364222ab/" target="_blank"><img src="./imagens/linkedin.png" alt="facebook"></a>
+            <a href="#" target="_blank"><img src="./imagens/facebook.png" alt="facebook"></a>
+            <a href="https://github.com/YAGO-SG" target="_blank"><img src="./imagens/gitlab.png" alt="gitlab"></a>
+        </nav>
+        <button>
+            Entrar em contato 
+        </button>
     </footer>
 
 </body>
