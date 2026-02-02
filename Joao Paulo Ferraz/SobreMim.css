@@ -1,3 +1,55 @@
 body {
-    background-color:bisque
+    margin: 0;
+    font-family: 'Poppins', sans-serif;     /* Mudar fonte */
 }
+
+header {
+    background-color:rgb(98, 72, 11);    /* Cor de fundo do header */
+    color: rgb(235, 235, 235);      /* Cor da fonte */
+    padding: 20px;      /* Ajustar o header no site */
+    display: flex;      /* Colocar o link ao lado do título */
+    align-items: center;        /* Colocar o link e o título na mesma reta */
+    justify-content: space-between;     /* Coloca o link para a lateral direita do site */
+}
+header h1 {
+    font-size: 25px;    /* Mudar tamanho do h1 */
+}
+header a { /* Link para a página inicial */
+    color: inherit;     /* Tira o azul do link */
+    text-decoration: none;      /* Tira o sublinhado do link */
+}
+
+main img {
+    margin-top: 55px;   /*Distancia a imagem de todo o header */
+    width: 400px;   /* Evita irregularidade na vertical */
+    height: 400px;  /* Evita irreglaridade na horizontal */
+    border-radius: 50%; /* Arredonda as pontas da imagem */
+    object-fit: cover;  /* Evita distorção */
+}
+main h3 {
+    width: 100%;        /* Faz o h3 ocupar toda a largura disponível */
+    text-align: center;     /* Centraliza o texto horizontalmente */
+    margin: 30px 0 10px;        /* Espaçamento externo superior e inferior */
+}
+
+ul, ol {
+    display: grid;      /* Organiza os itens das listas */
+    grid-template-columns: repeat(5, 1fr);      /* Coloca os elementos das listas lado a lado */
+    gap: 20px;      /* Cria um espaçamento entre os elementos */
+}
+ul li, ol li {
+   background-color: #d5d5d5;
+   height: 120px;       /* Molda os elementos das listas */
+   width: 120px;       /* Molda os elementos das listas */
+
+   display: flex;       /* Passa o nome de cada elemento das listas para baixo */
+   align-items: flex-end;       /* Organiza o nome dentro de cada elemento */
+   justify-content: center;
+
+   padding-bottom: 15px;    /* Molda os elementos da lista */
+   border-radius: 8px;      /* Arredonda as bordas dos elementos */
+}
+
+hr { /* Remover as tags <hr> do site */
+    margin: 0;
+    border: none; }
